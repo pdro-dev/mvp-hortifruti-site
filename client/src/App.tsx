@@ -1,19 +1,37 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Produtor from "./pages/Produtor";
+import Intermediario from "./pages/Intermediario";
+import Comercio from "./pages/Comercio";
+import Sobre from "./pages/Sobre";
+import Contato from "./pages/Contato";
 
 function Router() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-1">
+        <Switch>
+          <Route path={"/"} component={Home} />
+          <Route path={"/produtor"} component={Produtor} />
+          <Route path={"/intermediario"} component={Intermediario} />
+          <Route path={"/comercio"} component={Comercio} />
+          <Route path={"/sobre"} component={Sobre} />
+          <Route path={"/contato"} component={Contato} />
+          <Route path={"/404"} component={NotFound} />
+          {/* Final fallback route */}
+          <Route component={NotFound} />
+        </Switch>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
