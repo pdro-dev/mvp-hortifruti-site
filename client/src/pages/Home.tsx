@@ -63,8 +63,8 @@ export default function Home() {
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-green-400 to-green-600 p-1">
                 <div className="w-full h-full rounded-xl bg-white p-6 flex items-center justify-center">
                   <img 
-                    src="/images/arquitetura_sistema_visual.png" 
-                    alt="Arquitetura do Sistema oZé" 
+                    src="/images/hero-illustration.png" 
+                    alt="Como funciona o oZé - Do produtor ao intermediário" 
                     className="w-full h-full object-contain"
                   />
                 </div>
