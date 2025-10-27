@@ -77,13 +77,25 @@ export default function Home() {
       {/* Problema e Solução */}
       <section className="py-20 bg-muted/30">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold">O Problema</h2>
-            <p className="text-xl text-muted-foreground">
-              O setor hortifruti ainda opera de forma manual e custosa
-            </p>
+          <div className="max-w-5xl mx-auto space-y-12">
+            {/* Imagem ilustrativa do problema */}
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/img-cenarios.png" 
+                alt="Problema: Comunicação caótica vs Solução: Fluxo digital simplificado" 
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl sm:text-4xl font-bold">Do Caos ao Controle</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Eliminamos a comunicação caótica e substituímos por um fluxo digital simplificado
+              </p>
+            </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
             <Card className="border-destructive/50">
               <CardHeader>
                 <CardTitle className="text-destructive">150 ligações/dia</CardTitle>
@@ -352,12 +364,15 @@ export default function Home() {
               Do cadastro à entrega, tudo digitalizado e automatizado
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <img 
-              src="/images/fluxo_funcionalidades_visual.png" 
-              alt="Fluxo de Funcionalidades" 
-              className="w-full rounded-xl shadow-lg"
-            />
+          <div className="max-w-6xl mx-auto space-y-8">
+            {/* Fluxo completo ilustrado */}
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-white">
+              <img 
+                src="/images/img-casodeuso-produtor-b1.jpeg" 
+                alt="Fluxo completo: Cadastro de produtos → Land page automática → Negociação → Registro e controle automático" 
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>

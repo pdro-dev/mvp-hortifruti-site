@@ -12,6 +12,8 @@ import Intermediario from "./pages/Intermediario";
 import Comercio from "./pages/Comercio";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
+import AppProdutorStarter from "./pages/app/AppProdutorStarter";
+import AppIntermediarioBasico from "./pages/app/AppIntermediarioBasico";
 
 function Router() {
   return (
@@ -25,6 +27,8 @@ function Router() {
           <Route path={"/comercio"} component={Comercio} />
           <Route path={"/sobre"} component={Sobre} />
           <Route path={"/contato"} component={Contato} />
+          <Route path={"/app/produtor-starter"} component={AppProdutorStarter} />
+          <Route path={"/app/intermediario-basico"} component={AppIntermediarioBasico} />
           <Route path={"/404"} component={NotFound} />
           {/* Final fallback route */}
           <Route component={NotFound} />
