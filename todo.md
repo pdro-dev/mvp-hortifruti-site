@@ -59,3 +59,7 @@
 - [x] Fazer push do projeto para GitHub
 - [ ] Configurar deploy automático (Vercel/Netlify)
 
+
+
+- [x] Corrigir preview que não está funcionando (servidor reiniciado)
+
