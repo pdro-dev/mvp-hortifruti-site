@@ -17,25 +17,32 @@ import AppIntermediarioBasico from "./pages/app/AppIntermediarioBasico";
 
 function Router() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-1">
-        <Switch>
-          <Route path={"/"} component={Home} />
-          <Route path={"/produtor"} component={Produtor} />
-          <Route path={"/intermediario"} component={Intermediario} />
-          <Route path={"/comercio"} component={Comercio} />
-          <Route path={"/sobre"} component={Sobre} />
-          <Route path={"/contato"} component={Contato} />
-          <Route path={"/app/produtor-starter"} component={AppProdutorStarter} />
-          <Route path={"/app/intermediario-basico"} component={AppIntermediarioBasico} />
-          <Route path={"/404"} component={NotFound} />
-          {/* Final fallback route */}
-          <Route component={NotFound} />
-        </Switch>
-      </main>
-      <Footer />
-    </div>
+    <Switch>
+      {/* Rotas de App (sem layout) */}
+      <Route path="/app/produtor-starter" component={AppProdutorStarter} />
+      <Route path="/app/intermediario-basico" component={AppIntermediarioBasico} />
+      
+      {/* Rotas principais (com layout) */}
+      <Route>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1">
+            <Switch>
+              <Route path="/" component={Home} />
+              <Route path="/produtor" component={Produtor} />
+              <Route path="/intermediario" component={Intermediario} />
+              <Route path="/comercio" component={Comercio} />
+              <Route path="/sobre" component={Sobre} />
+              <Route path="/contato" component={Contato} />
+              <Route path="/404" component={NotFound} />
+              {/* Final fallback route */}
+              <Route component={NotFound} />
+            </Switch>
+          </main>
+          <Footer />
+        </div>
+      </Route>
+    </Switch>
   );
 }
 
