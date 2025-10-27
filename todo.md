@@ -49,3 +49,7 @@
 - [ ] Exportação de relatórios (PDF/Excel)
 - [ ] Integração com WhatsApp Business API
 
+
+
+- [x] Corrigir erro de nested anchors nos cards de perfil (Link envolvendo card + botões com Link dentro)
+

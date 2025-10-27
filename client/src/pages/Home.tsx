@@ -168,8 +168,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Produtor */}
-            <Link href="/produtor">
-              <Card className="group hover:shadow-lg transition-all cursor-pointer h-full">
+            <Card className="group hover:shadow-lg transition-all h-full">
                 <CardHeader>
                   <div className="h-12 w-12 rounded-lg bg-green-100 flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
                     <Leaf className="h-6 w-6 text-green-600" />
@@ -211,11 +210,9 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-            </Link>
 
             {/* Intermediário */}
-            <Link href="/intermediario">
-              <Card className="group hover:shadow-lg transition-all cursor-pointer border-primary h-full">
+            <Card className="group hover:shadow-lg transition-all border-primary h-full">
                 <CardHeader>
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                     <Truck className="h-6 w-6 text-primary" />
@@ -257,11 +254,9 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-            </Link>
 
             {/* Comércio */}
-            <Link href="/comercio">
-              <Card className="group hover:shadow-lg transition-all cursor-pointer h-full">
+            <Card className="group hover:shadow-lg transition-all h-full">
                 <CardHeader>
                   <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
                     <Store className="h-6 w-6 text-blue-600" />
@@ -296,7 +291,6 @@ export default function Home() {
                   </Button>
                 </CardContent>
               </Card>
-            </Link>
           </div>
         </div>
       </section>
