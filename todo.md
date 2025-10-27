@@ -53,3 +53,9 @@
 
 - [x] Corrigir erro de nested anchors nos cards de perfil (Link envolvendo card + botões com Link dentro)
 
+
+
+- [x] Criar repositório no GitHub
+- [x] Fazer push do projeto para GitHub
+- [ ] Configurar deploy automático (Vercel/Netlify)
+
