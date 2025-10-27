@@ -1,48 +1,51 @@
+# TODO - MVP Hortifruti Site
 
+## ✅ Concluído
 
-## 🎨 Melhorias Visuais
+### Site Institucional
+- [x] Página Home com hero, problema/solução, perfis, funcionalidades
+- [x] Página Produtor com 4 versões do oZé
+- [x] Página Intermediário com ROI e dashboard
+- [x] Página Comércio
+- [x] Página Sobre
+- [x] Página Contato
+- [x] Header e Footer responsivos
+- [x] Design system verde (agronegócio)
+- [x] Ilustrações comerciais na Home
 
-- [ ] Substituir imagem técnica de arquitetura por ilustração comercial/marketeira com storytelling visual na Home
+### App Produtor Starter
+- [x] Tela Home com lista de ofertas
+- [x] Cadastro por voz com transcrição
+- [x] Cadastro manual simplificado
+- [x] Confirmação com QR Code e land page
+- [x] Bottom navigation
+- [x] Interface mobile-first
 
+### Dashboard Intermediário Básico
+- [x] Dashboard consolidado com KPIs
+- [x] Lista de ofertas de todos produtores
+- [x] Busca e filtros
+- [x] Botões de contato (Ligar/WhatsApp)
+- [x] Botão de reserva
+- [x] Stats de ROI (R$ 72k/ano, 150 ligações)
 
+## 🐛 Bugs a Corrigir
 
-## 🎨 Melhorias Visuais
+- [ ] Erro ao publicar: "failed to get checkpoint: record not found"
 
-- [x] Criar ilustração comercial/marketeira com storytelling visual para substituir diagrama técnico na Home
-- [x] Estilo: linha simples, personagens ilustrados, fluxo horizontal com setas
-- [x] Conteúdo: Produtor (com chapéu) → App/Cadastro → Sistema (nuvem) → Intermediário (laptop) → Dashboard
+## 🚀 Melhorias Necessárias
 
+- [x] Adicionar botões "Testar App" na página Home (hero e cards de perfil)
+- [x] Falta de links no site para acessar App Produtor e Dashboard Intermediário
+- [ ] Adicionar botões "Acessar App" nas páginas Produtor e Intermediário
+- [ ] Atualizar imagens nas páginas Produtor e Intermediário com ilustrações fornecidas
 
+## 📋 Próximas Funcionalidades (Backlog)
 
-
-## 📸 Atualização de Imagens
-
-- [x] Substituir imagens do site pelas ilustrações fornecidas
-- [x] Home: usar img-casodeuso-produtor-b1.jpeg e img-cenarios.png
-- [ ] Página Produtor: usar img-casodeuso-produtor-a1.png e a2.png
-- [ ] Página Intermediário: usar img-atravessador.png e img-atravessaror1.png
-- [ ] Gerar novas ilustrações se necessário (inspiradas nas fornecidas)
-
-## 🎯 Desenvolvimento MVP Starter - App Produtor
-
-- [ ] Redesenhar App Produtor focando na versão Starter (gratuita)
-- [ ] Tela 1: Home com lista de ofertas
-- [ ] Tela 2: Cadastro de oferta (voz + manual)
-- [ ] Tela 3: Confirmação com QR Code e land page
-- [ ] Implementar cadastro por voz (Web Speech API)
-- [ ] Implementar câmera para foto do produto
-- [ ] Gerar QR Code automaticamente
-- [ ] Criar land page automática por produtor
-- [ ] Modo offline (sincronização)
-
-## 💼 Desenvolvimento MVP Básico - Dashboard Intermediário
-
-- [ ] Redesenhar Dashboard Intermediário focando na versão Básica (paga)
-- [ ] Lista consolidada de ofertas de todos produtores
-- [ ] Busca por nome de produtor
-- [ ] Filtros (data, produto, região, preço)
-- [ ] Botão de contato direto (WhatsApp)
-- [ ] Atualização automática (refresh)
-- [ ] Exportação CSV/Excel
-- [ ] Cards de resumo (produtores ativos, ofertas, volume total)
+- [ ] Integração real com backend (banco de dados)
+- [ ] Autenticação de usuários
+- [ ] Sistema de notificações push
+- [ ] Modo offline real (service worker)
+- [ ] Exportação de relatórios (PDF/Excel)
+- [ ] Integração com WhatsApp Business API
 

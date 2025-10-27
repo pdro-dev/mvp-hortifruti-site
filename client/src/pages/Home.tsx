@@ -35,13 +35,13 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
-                  <Link href="/comecar">
-                    Começar Grátis
+                  <Link href="/app/produtor-starter">
+                    Testar App Produtor
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <Link href="/sobre">Saiba Mais</Link>
+                  <Link href="/app/intermediario-basico">Ver Dashboard Intermediário</Link>
                 </Button>
               </div>
               <div className="flex items-center gap-8 pt-4">
@@ -198,10 +198,17 @@ export default function Home() {
                       <span>Controle custos e margens</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6" variant="outline">
-                    Ver Detalhes
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <div className="space-y-2 mt-6">
+                    <Button className="w-full" asChild>
+                      <Link href="/app/produtor-starter">
+                        Testar App Grátis
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button className="w-full" variant="outline" asChild>
+                      <Link href="/produtor">Ver Detalhes</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -237,10 +244,17 @@ export default function Home() {
                       <span>Inteligência de mercado</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6">
-                    Ver Detalhes
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <div className="space-y-2 mt-6">
+                    <Button className="w-full" asChild>
+                      <Link href="/app/intermediario-basico">
+                        Ver Dashboard
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button className="w-full" variant="outline" asChild>
+                      <Link href="/intermediario">Ver Detalhes</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
